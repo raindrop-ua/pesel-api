@@ -10,3 +10,9 @@ management:
     health:
       probes:
         enabled: true
+
+spring:
+  jackson:
+    time-zone: UTC
+    serialization:
+      write-dates-as-timestamps: false
