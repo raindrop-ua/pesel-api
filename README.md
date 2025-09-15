@@ -51,35 +51,18 @@ curl "http://localhost:8090/generator?quantity=10"
 
 ### Specific date of birth
 ```bash
-curl "http://localhost:8090/generator?dob=28.06.1991"
+curl "http://localhost:8090/generator?dob=03.09.1983"
 ```
 
 ### Combined parameters
 ```bash
-curl "http://localhost:8090/generator?dob=28.06.1991&sex=male&quantity=5"
+curl "http://localhost:8090/generator?dob=26.06.1989&sex=female&quantity=5"
 ```
 
-## 🔥 Example Responses
+## 🚀 Live Demo
 
-### Successful response:
-```bash
-[
-  "91062812345",
-  "91062867890",
-  "91062854321"
-]
-```
+[🔗 Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
 
-### Error response:
-```bash
-{
-  "timestamp": "2025-09-15T07:30:00Z",
-  "status": 400,
-  "error": "Bad Request",
-  "message": "dob must be in format dd.MM.yyyy",
-  "path": "/generator"
-}
-```
 
 ---
 
