@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  pesel-api:
+    build: .
+    image: pesel-api:local
+    container_name: pesel-api
+    ports:
+      - "8090:8090"
+    environment:
+      SERVER_PORT: "8090"
+      JAVA_OPTS: "-Xms128m -Xmx512m"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8090/generator"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 20s
