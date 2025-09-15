@@ -73,8 +73,8 @@ public class PeselGeneratorService {
         if (quantity > maxPossible) {
             throw new InvalidParamException(
                     "Requested quantity=" + quantity +
-                    " exceeds the maximum unique combinations (" + maxPossible +
-                    ") for the given constraints."
+                    " exceeds the maximum unique combinations (" + maxPossible + ")" +
+                    " for the given constraints."
             );
         }
 
