@@ -44,7 +44,7 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> handleAny(Exception ex, ServletWebRequest req) {
+    public ResponseEntity<ErrorResponse> handleAny(ServletWebRequest req) {
         return respond(HttpStatus.INTERNAL_SERVER_ERROR, "Unexpected error", req);
     }
 }
