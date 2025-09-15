@@ -32,31 +32,31 @@ mvn clean package
 java -jar target/pesel-*.jar
 ```
 Service will be available at:
-👉 http://localhost:8080/generator
+👉 http://localhost:8090/generator
 
 ### Single random PESEL
 ```bash
-curl "http://localhost:8080/generator"
+curl "http://localhost:8090/generator"
 ```
 
 ### Female PESEL
 ```bash
-curl "http://localhost:8080/generator?sex=female"
+curl "http://localhost:8090/generator?sex=female"
 ```
 
 ### 10 random PESELs
 ```bash
-curl "http://localhost:8080/generator?quantity=10"
+curl "http://localhost:8090/generator?quantity=10"
 ```
 
 ### Specific date of birth
 ```bash
-curl "http://localhost:8080/generator?dob=28.06.1991"
+curl "http://localhost:8090/generator?dob=28.06.1991"
 ```
 
 ### Combined parameters
 ```bash
-curl "http://localhost:8080/generator?dob=28.06.1991&sex=male&quantity=5"
+curl "http://localhost:8090/generator?dob=28.06.1991&sex=male&quantity=5"
 ```
 
 ## 🔥 Example Responses
