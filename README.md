@@ -1,4 +1,4 @@
-# 🆔 PESEL Generator API
+# PESEL Generator API
 
 ![Java](https://img.shields.io/badge/Java-21-blue?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
@@ -11,19 +11,19 @@ All generated numbers within a single request are guaranteed to be **unique** �
 
 ---
 
-## ✨ Features
-- 🔢 Generate one or multiple PESEL numbers
-- 🎯 Supported parameters:
+## Features
+- Generate one or multiple PESEL numbers
+- Supported parameters:
     - `sex` — gender (`male` / `female`)
     - `dob` — birthdate (`dd.MM.yyyy`)
     - `quantity` — amount of PESELs to generate (default: `1`)
-- 🛡️ Input validation and clean JSON error responses
-- 📦 Clean and simple architecture: controller, service, exceptions, utils
-- 🚀 Ready for Docker & CI/CD
+- Input validation and clean JSON error responses
+- Clean and simple architecture: controller, service, exceptions, utils
+- Ready for Docker & CI/CD
 
 ---
 
-## ⚙️ Running
+## Running
 
 ### Maven
 ```bash
@@ -32,7 +32,7 @@ mvn clean package
 java -jar target/pesel-*.jar
 ```
 Service will be available at:
-👉 http://localhost:8090/generator
+http://localhost:8090/generator
 
 ### Single random PESEL
 ```bash
@@ -59,11 +59,11 @@ curl "http://localhost:8090/generator?dob=03.09.1983"
 curl "http://localhost:8090/generator?dob=26.06.1989&sex=female&quantity=5"
 ```
 
-## 🚀 Live Demo
+## Live Demo
 
 [🔗 Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
 
 
 ---
 
-👨‍💻 Made with ❤️ by [Anton Sizov](https://antonsizov.com)
+Made with ❤️ by [Anton Sizov](https://antonsizov.com)
