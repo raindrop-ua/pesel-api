@@ -56,14 +56,14 @@ curl "http://localhost:8090/generator?dob=03.09.1983"
 
 ### Combined parameters
 ```bash
-curl "http://localhost:8090/generator?dob=26.06.1989&sex=female&quantity=5"
+curl "http://localhost:8090/generator?dob=26.06.1988&sex=female&quantity=5"
 ```
 
 ## Live Demo
 
-[🔗 Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
+[Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
 
 
 ---
 
-Made with ❤️ by [Anton Sizov](https://antonsizov.com)
+Coded by [Anton Sizov](https://antonsizov.com)
