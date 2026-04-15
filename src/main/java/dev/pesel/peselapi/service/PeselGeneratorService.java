@@ -44,7 +44,7 @@ public class PeselGeneratorService {
     public String generateRandom(Sex sex) {
         LocalDate today = LocalDate.now();
         int maxYear = Math.min(PeselUtils.MAX_YEAR, today.getYear());
-        int minYear = Math.max(PeselUtils.MIN_YEAR, today.getYear() - 100);
+        int minYear = Math.max(PeselUtils.MIN_YEAR, today.getYear() - 50);
 
         while (true) {
             int y = rnd.nextInt(maxYear - minYear + 1) + minYear;
