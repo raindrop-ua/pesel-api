@@ -15,14 +15,21 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.time.format.DateTimeParseException;
+import java.time.format.ResolverStyle;
+import java.util.Locale;
 import java.util.List;
 
 @RestController
 @RequestMapping(path = "/generator", produces = MediaType.APPLICATION_JSON_VALUE)
 public class GeneratorController {
 
-  private static final DateTimeFormatter DOB_FMT = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+  private static final DateTimeFormatter DOB_FMT =
+          new DateTimeFormatterBuilder()
+                  .appendPattern("dd.MM.uuuu")
+                  .toFormatter(Locale.ROOT)
+                  .withResolverStyle(ResolverStyle.STRICT);
   private final PeselGeneratorService service;
 
   public GeneratorController(PeselGeneratorService service) {

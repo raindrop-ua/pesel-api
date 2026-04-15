@@ -38,11 +38,6 @@ public class RestExceptionHandler {
         return respond(HttpStatus.BAD_REQUEST, "Bad parameter value: " + ex.getName(), req);
     }
 
-    @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<ErrorResponse> handleIllegalArg(IllegalArgumentException ex, ServletWebRequest req) {
-        return respond(HttpStatus.BAD_REQUEST, ex.getMessage(), req);
-    }
-
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleAny(ServletWebRequest req) {
         return respond(HttpStatus.INTERNAL_SERVER_ERROR, "Unexpected error", req);
