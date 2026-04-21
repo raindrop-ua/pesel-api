@@ -24,6 +24,6 @@ ENV JAVA_OPTS="-XX:+UseZGC -XX:MaxRAMPercentage=75.0 -XX:+AlwaysActAsServerClass
 ENV APP_OPTS=""
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=20s --retries=3 \
-  CMD curl -fsS http://127.0.0.1:8090/generator || exit 1
+  CMD curl -fsS http://127.0.0.1:8090/actuator/health/readiness || exit 1
 
 ENTRYPOINT exec java $JAVA_OPTS -jar /app/app.jar $APP_OPTS
