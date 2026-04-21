@@ -4,7 +4,7 @@ Thanks for contributing to `pesel-api`.
 
 ## Prerequisites
 
-- Java 21
+- Java 25
 - Maven 3.9+ (or use `./mvnw`)
 - Docker (optional, for container runs)
 
@@ -48,4 +48,3 @@ Build jar:
 - Tests pass (`./mvnw test`).
 - Documentation is updated when behavior changes.
 - No unrelated refactors in the same PR.
-
