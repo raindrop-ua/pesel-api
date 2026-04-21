@@ -7,7 +7,7 @@
 
 **PESEL Generator API** — a lightweight REST service built with **Spring Boot** that generates valid Polish PESEL numbers.  
 It supports random generation as well as custom parameters (birthdate, sex, quantity).  
-All generated numbers within a single request are guaranteed to be **unique** ✅
+All generated numbers within a single request are guaranteed to be **unique**.
 
 ---
 
@@ -64,6 +64,11 @@ curl "http://localhost:8090/generator?dob=26.06.1988&sex=female&quantity=5"
 ## Live Demo
 
 [Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
+
+## Documentation
+
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Architecture Overview](./ARCHITECTURE.md)
 
 
 ---
