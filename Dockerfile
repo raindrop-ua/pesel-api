@@ -1,5 +1,5 @@
 # ---- Build stage -------------------------------------------------------------
-FROM maven:3.9-eclipse-temurin-21 AS builder
+FROM maven:3.9-eclipse-temurin-25 AS builder
 
 WORKDIR /app
 COPY pom.xml .
@@ -9,7 +9,7 @@ COPY src ./src
 RUN mvn -q -e -B -DskipTests clean package
 
 # ---- Runtime stage -----------------------------------------------------------
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:25-jre
 
 RUN useradd -ms /bin/bash appuser
 USER appuser

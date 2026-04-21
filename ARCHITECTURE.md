@@ -49,7 +49,7 @@
 
 ## Runtime Notes
 
+- Java baseline: `25` (build and runtime images use Eclipse Temurin 25).
 - Default HTTP port: `8090` (configurable via `SERVER_PORT`).
 - Actuator exposes `health` and `info`.
 - Docker compose maps `8090:8090` and includes a basic healthcheck.
-
