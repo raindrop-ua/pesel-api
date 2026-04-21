@@ -1,7 +1,7 @@
 # PESEL Generator API
 
 ![Java](https://img.shields.io/badge/Java-25-blue?logo=openjdk)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-brightgreen?logo=springboot)
 ![Build](https://img.shields.io/badge/build-Maven-orange?logo=apachemaven)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
