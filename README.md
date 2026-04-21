@@ -65,6 +65,11 @@ curl "http://localhost:8090/generator?dob=26.06.1988&sex=female&quantity=5"
 
 [Try it on api.pesel.dev/generator](https://api.pesel.dev/generator)
 
+## Documentation
+
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Architecture Overview](./ARCHITECTURE.md)
+
 
 ---
 
