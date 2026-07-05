@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-25-blue?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-brightgreen?logo=springboot)
 ![Build](https://img.shields.io/badge/build-Maven-orange?logo=apachemaven)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![License](https://img.shields.io/badge/license-proprietary-red)
 
 **PESEL Generator API** — a lightweight REST service built with **Spring Boot** that generates valid Polish PESEL numbers.  
 It supports random generation as well as custom parameters (birthdate, sex, quantity).  
