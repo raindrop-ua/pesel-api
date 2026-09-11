@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-25-blue?logo=openjdk)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.x-brightgreen?logo=springboot)
 ![Build](https://img.shields.io/badge/build-Maven-orange?logo=apachemaven)
-![License](https://img.shields.io/badge/license-proprietary-red)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 **PESEL Generator API** — a lightweight REST service built with **Spring Boot** that generates valid Polish PESEL numbers.  
 It supports random generation as well as custom parameters (birthdate, sex, quantity).  
@@ -34,31 +34,31 @@ mvn clean package
 java -jar target/pesel-*.jar
 ```
 Service will be available at:
-http://localhost:8090/generator
+http://localhost:8080/generator
 
 ### Single random PESEL
 ```bash
-curl "http://localhost:8090/generator"
+curl "http://localhost:8080/generator"
 ```
 
 ### Female PESEL
 ```bash
-curl "http://localhost:8090/generator?sex=female"
+curl "http://localhost:8080/generator?sex=female"
 ```
 
 ### 10 random PESELs
 ```bash
-curl "http://localhost:8090/generator?quantity=10"
+curl "http://localhost:8080/generator?quantity=10"
 ```
 
 ### Specific date of birth
 ```bash
-curl "http://localhost:8090/generator?dob=03.09.1983"
+curl "http://localhost:8080/generator?dob=03.09.1983"
 ```
 
 ### Combined parameters
 ```bash
-curl "http://localhost:8090/generator?dob=26.06.1988&sex=female&quantity=5"
+curl "http://localhost:8080/generator?dob=26.06.1988&sex=female&quantity=5"
 ```
 
 ## Live Demo
@@ -70,13 +70,17 @@ curl "http://localhost:8090/generator?dob=26.06.1988&sex=female&quantity=5"
 Use Spring Boot Actuator readiness endpoint for container/platform health checks:
 
 ```text
-http://localhost:8090/actuator/health/readiness
+http://localhost:8080/actuator/health/readiness
 ```
 
 ## Documentation
 
 - [Contributing Guide](./CONTRIBUTING.md)
 - [Architecture Overview](./ARCHITECTURE.md)
+
+## License
+
+Licensed under the [MIT License](./LICENSE).
 
 
 ---
