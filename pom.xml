@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.5</version>
+        <version>4.0.8</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.pesel</groupId>
@@ -15,7 +15,11 @@
     <description>pesel-api</description>
     <url/>
     <licenses>
-        <license/>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/license/mit</url>
+            <distribution>repo</distribution>
+        </license>
     </licenses>
     <developers>
         <developer/>
@@ -28,6 +32,7 @@
     </scm>
     <properties>
         <java.version>25</java.version>
+        <tomcat.version>11.0.25</tomcat.version>
     </properties>
     <dependencies>
         <dependency>
